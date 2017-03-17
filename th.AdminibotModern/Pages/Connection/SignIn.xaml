@@ -1,0 +1,97 @@
+﻿<UserControl x:Class="th.AdminibotModern.Pages.Connection.Connection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:connection="clr-namespace:th.AdminibotModern.Pages.Connection"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer>
+            <StackPanel MinWidth="200">
+                <TextBlock Text="SIGN-IN INFORMATION" Style="{StaticResource Heading2}" />
+                <mui:BBCodeBlock BBCode="In order to properly connect to Twitch, we'll need to know a few details. Please remember that these details will not be shared with anyone." Margin="0,0,0,32" />
+                <TextBlock Text="CREDENTIALS" Style="{StaticResource Heading2}" />
+                <mui:BBCodeBlock BBCode="In the form below, you'll need to enter the following details:&#13;&#10;• [B]Username[/B] - The Twitch username you want to bot to use.&#13;&#10;• [B]Token[/B] - A generated token that acts as your password. You can generate one by using the buttons below the form." Margin="0,0,0,16" />
+                <StackPanel Orientation="Vertical">
+                    <StackPanel.DataContext>
+                        <connection:SignInViewModel />
+                    </StackPanel.DataContext>
+                    <StackPanel.Resources>
+                        <Style TargetType="StackPanel">
+                            <Setter Property="Orientation" Value="Horizontal" />
+                            <Setter Property="Margin" Value="0,0,0,4" />
+                        </Style>
+                        <Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
+                            <Setter Property="Width" Value="100" />
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                        <Style TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+                            <Setter Property="Width" Value="150"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                        <Style TargetType="PasswordBox" BasedOn="{StaticResource {x:Type PasswordBox}}">
+                            <Setter Property="Width" Value="150"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                        <Style TargetType="CheckBox" BasedOn="{StaticResource {x:Type CheckBox}}">
+                            <Setter Property="Padding" Value="0,3" />
+                        </Style>
+                    </StackPanel.Resources>
+                    <StackPanel>
+                        <Label>Username</Label>
+                        <TextBox Name="TxtUsername" Text="{Binding Username, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel>
+                        <Label>Token</Label>
+                        <PasswordBox Name="TxtPassword"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <Label />
+                        <CheckBox Name="ChkRememberLogin" Content="Remember" IsChecked="True" ToolTip="Only leave this checked if you are on a private computer." />
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,32">
+                    <Button Width="100" Content="Get Token" />
+                    <Button Margin="10,0,0,0" Width="100" Content="Alternative" />
+                </StackPanel>
+                <TextBlock Text="TARGET" Style="{StaticResource Heading2}" />
+                <mui:BBCodeBlock BBCode="In the form below, you'll need to enter the target channel's Twitch username to connect to. It can be the same as the username used above. For example: If you want to connect to [I]Adminibot[/I]'s Twitch channel, you'd type in &quot;Adminibot&quot;." Margin="0,0,0,16" />
+                <StackPanel Orientation="Vertical" Margin="0,0,0,32">
+                    <StackPanel.DataContext>
+                        <connection:SignInViewModel />
+                    </StackPanel.DataContext>
+                    <StackPanel.Resources>
+                        <Style TargetType="StackPanel">
+                            <Setter Property="Orientation" Value="Horizontal" />
+                            <Setter Property="Margin" Value="0,0,0,4" />
+                        </Style>
+                        <Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}">
+                            <Setter Property="Width" Value="100" />
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                        <Style TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+                            <Setter Property="Width" Value="150"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                        <Style TargetType="CheckBox" BasedOn="{StaticResource {x:Type CheckBox}}">
+                            <Setter Property="Padding" Value="0,3" />
+                        </Style>
+                    </StackPanel.Resources>
+                    <StackPanel>
+                        <Label>Channel</Label>
+                        <TextBox Name="TxtChannel" Text="{Binding Channel, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                    <StackPanel>
+                        <Label />
+                        <CheckBox Name="ChkRememberChannel" Content="Remember" IsChecked="True" ToolTip="Only leave this checked if you are on a private computer." />
+                    </StackPanel>
+                </StackPanel>
+                <TextBlock Text="CONNECT" Style="{StaticResource Heading2}" />
+                <mui:BBCodeBlock BBCode="Click the button below to connect the bot to Twitch. Please make sure that all necessary information is filled in." Margin="0,0,0,16" />
+                <Button Name="BtnConnect" Width="100" Content="Connect" HorizontalAlignment="Left" Click="BtnConnect_Click" />
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

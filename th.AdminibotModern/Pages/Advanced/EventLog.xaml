@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="th.AdminibotModern.Pages.Advanced.Events"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0">
+                    <TextBlock Text="EVENT LOG" Style="{StaticResource Heading2}" />
+                    <mui:BBCodeBlock BBCode="On this page, all that happened will be displayed. You can use this page to see what went wrong (if something went wrong), specific events, errors, and thrown exceptions that were handled.&#13;&#10;&#13;&#10;Should you notice that something went wrong and it isn't mentioned on this page, you can send an email to [url=MAILTO:timoviveen@live.nl?SUBJECT=Bug%20Report]timoviveen@live.nl[/url] with the subject line &quot;Bug Report&quot;. Please make sure to include both the events and the errors log files should they be available, otherwise send a description of what happened." Margin="0,0,0,16" />
+                </StackPanel>
+                <RichTextBox Grid.Row="1" IsReadOnly="True"></RichTextBox>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

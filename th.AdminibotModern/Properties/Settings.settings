@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="th.AdminibotModern.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SelectedAccentColor" Type="System.Windows.Media.Color" Scope="User">
+      <Value Profile="(Default)">#FFA200FF</Value>
+    </Setting>
+    <Setting Name="SelectedThemeSource" Type="System.Uri" Scope="User">
+      <Value Profile="(Default)">/FirstFloor.ModernUI;component/Assets/ModernUI.Dark.xaml</Value>
+    </Setting>
+    <Setting Name="SelectedThemeDisplayName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Dark</Value>
+    </Setting>
+    <Setting Name="SelectedFontSize" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Large</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

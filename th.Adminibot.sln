@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "th.AdminibotModern", "th.AdminibotModern\th.AdminibotModern.csproj", "{745A7EF2-4835-4EF7-8797-5FE0324A85CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "th.AdminibotLegacy", "th.AdminibotLegacy\th.AdminibotLegacy.csproj", "{B0145660-8B50-4A28-9312-38D53A4B8759}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{745A7EF2-4835-4EF7-8797-5FE0324A85CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{745A7EF2-4835-4EF7-8797-5FE0324A85CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{745A7EF2-4835-4EF7-8797-5FE0324A85CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{745A7EF2-4835-4EF7-8797-5FE0324A85CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0145660-8B50-4A28-9312-38D53A4B8759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0145660-8B50-4A28-9312-38D53A4B8759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0145660-8B50-4A28-9312-38D53A4B8759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0145660-8B50-4A28-9312-38D53A4B8759}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

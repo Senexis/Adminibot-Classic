@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="th.AdminibotModern.Pages.Welcome.Home"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer>
+            <StackPanel >
+                <TextBlock Text="ADMINIBOT" Style="{StaticResource Heading1}" Margin="0,0,0,8"/>
+                <mui:BBCodeBlock BBCode="[b]Adminibot[/b], a beautiful Metro-themed Twitch bot with functions most other Twitch bots don't support, making moderating your chat easy and fun.&#13;&#10;&#13;&#10;Once set up, you will be able to use [b]Adminibot[/b] to moderate your chat and focus on what you do best: streaming. A lot of features in [b]Adminibot[/b] are customizable so you can fully tailor the bot for your stream and chat.&#13;&#10;&#13;&#10;You can start by connecting to Twitch on the [url=/Pages/Connection/SignIn.xaml]Connection page[/url]." Margin="0,0,0,32" />
+                <TextBlock Text="APPEARANCE" Style="{StaticResource Heading2}" />
+                <mui:BBCodeBlock BBCode="If you want to, you can customize the looks of [b]Adminibot[/b] and more by heading over to the [url=/Pages/Settings/AdminibotSettings.xaml]Settings page[/url]. Here, you will be able to switch between a light or dark theme, customize the accent color, and set your prefered font size." Margin="0,0,0,32"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

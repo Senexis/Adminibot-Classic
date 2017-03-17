@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="th.AdminibotModern.Pages.Welcome.CommandsPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Style="{StaticResource ContentRoot}">
+        <mui:ModernTab Layout="List" SelectedSource="/Pages/Welcome/Commands/General.xaml">
+            <mui:ModernTab.Links>
+                <mui:Link DisplayName="General" Source="/Pages/Welcome/Commands/General.xaml" />
+                <mui:Link DisplayName="Battletags" Source="/Pages/Welcome/Commands/Battletags.xaml" />
+                <mui:Link DisplayName="Currency" Source="/Pages/Welcome/Commands/Currency.xaml" />
+                <mui:Link DisplayName="Custom Commands" Source="/Pages/Welcome/Commands/CustomCommands.xaml" />
+                <mui:Link DisplayName="Moderation" Source="/Pages/Welcome/Commands/Moderation.xaml" />
+                <mui:Link DisplayName="Polls" Source="/Pages/Welcome/Commands/Polls.xaml" />
+                <mui:Link DisplayName="Raffles" Source="/Pages/Welcome/Commands/Raffles.xaml" />
+                <mui:Link DisplayName="Spam Protection" Source="/Pages/Welcome/Commands/SpamProtection.xaml" />
+                <mui:Link DisplayName="Time Watched" Source="/Pages/Welcome/Commands/TimeWatched.xaml" />
+            </mui:ModernTab.Links>
+        </mui:ModernTab>
+    </Grid>
+</UserControl>

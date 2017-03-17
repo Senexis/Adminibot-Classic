@@ -1,0 +1,46 @@
+﻿<mui:ModernWindow x:Class="th.AdminibotModern.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        Title="Adminibot" IsTitleVisible="True"
+        LogoData="M4,2H22V14L17,19H13L10,22H7V19H2V6L4,2M20,13V4H6V16H9V19L12,16H17L20,13M15,7H17V12H15V7M12,7V12H10V7H12Z"          
+        ContentSource="/Pages/Welcome/Home.xaml"
+        MinHeight="480" MinWidth="640">
+    <mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup DisplayName="Welcome">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Home" Source="/Pages/Welcome/Home.xaml" />
+                <mui:Link DisplayName="Features" Source="/Pages/Welcome/Features.xaml" />
+                <mui:Link DisplayName="Commands" Source="/Pages/Welcome/Commands.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Connection">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Sign-In" Source="/Pages/Connection/SignIn.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Stream">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Chat" Source="/Pages/Stream/Chat.xaml" />
+                <mui:Link DisplayName="Information" Source="/Pages/Stream/Information.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Advanced">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Database Management" Source="/Pages/Advanced/DatabaseManagement.xaml" />
+                <mui:Link DisplayName="Event Log" Source="/Pages/Advanced/EventLog.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="Settings" GroupKey="Settings">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Adminibot Settings" Source="/Pages/Settings/AdminibotSettings.xaml" />
+                <mui:Link DisplayName="Information" Source="/Pages/Settings/Information.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
+    <mui:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="Home" Source="/Pages/Welcome/Home.xaml" />
+        <mui:Link DisplayName="Settings" Source="/Pages/Settings/AdminibotSettings.xaml" />
+        <mui:Link DisplayName="Help" Source="https://github.com/HuMothy/Adminibot" />
+    </mui:ModernWindow.TitleLinks>
+</mui:ModernWindow>

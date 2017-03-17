@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="th.AdminibotModern.Pages.Settings.Information.About"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel MinWidth="200">
+                <TextBlock Text="ABOUT ADMINIBOT" Style="{StaticResource Heading2}" />
+                <mui:BBCodeBlock BBCode="[b]Adminibot[/b] was made with love for you, the streamer, and for you, the beginning developer. We created [b]Adminibot[/b] as a program for other potential Twitch developers to learn how to go about creating a Twitch bot. Of course, we are also focussing on features and customizability. We hope that you enjoy [b]Adminibot[/b] and perhaps learn something from it as well." Margin="0,0,0,32" />
+                <TextBlock Text="CREDITS" Style="{StaticResource Heading2}" />
+                <mui:BBCodeBlock BBCode="Apart from all the people working on the parts used in [b]Adminibot[/b], which you can find on the [url=/Pages/Settings/Information/ThirdParty.xaml]Third Party page[/url], here's us -- the creators of [b]Adminibot[/b]." Margin="0,0,0,16" />
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,16">
+                    <Image Height="64" Width="64" Source="/th.AdminibotModern;component/Resources/avatar_timo64.png" Margin="0,0,16,0"/>
+                    <mui:BBCodeBlock BBCode="[b]Timo Viveen (Nadermane)[/b]&#13;&#10;Design and Programming&#13;&#10;&#13;&#10;[i]&quot;One doesn't simply even even.&quot;[/i]"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,16">
+                    <Image Height="64" Width="64" Source="/th.AdminibotModern;component/Resources/avatar_hugo64.png" Margin="0,0,16,0"/>
+                    <mui:BBCodeBlock BBCode="[b]Hugo Kruis (HugoC4)[/b]&#13;&#10;Programming&#13;&#10;&#13;&#10;[i]&quot;DEEEWWWWOOOOOOOOOHHHH&quot;[/i]"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
